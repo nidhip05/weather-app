@@ -1,7 +1,6 @@
 import axios from "axios";
 import React from "react";
 import { AiOutlineSearch } from "react-icons/ai";
-import { BiWind } from "react-icons/bi";
 import {
   BsCloudFog2Fill,
   BsCloudyFill,
@@ -11,6 +10,7 @@ import {
 import { RiLoaderFill } from "react-icons/ri";
 import { TiWeatherPartlySunny } from "react-icons/ti";
 import { WiHumidity } from "react-icons/wi";
+import { TbWind } from "react-icons/tb";
 import { MainWrapper } from "./styles.module";
 
 interface WeatherDataProps {
@@ -85,7 +85,7 @@ const DisplayWeather = () => {
         iconColor = "#ffc436";
         break;
 
-      case "Clouds":
+      case "Cloudy":
         iconElement = <BsCloudyFill />;
         iconColor = "#102c57";
         break;
@@ -127,7 +127,7 @@ const DisplayWeather = () => {
         <div className="searchArea">
           <input
             type="text"
-            placeholder="Enter city"
+            placeholder="Enter City"
             value={searchCity}
             onChange={(e) => setSearchCity(e.target.value)}
           />
@@ -143,22 +143,31 @@ const DisplayWeather = () => {
               <div className="icon">
                 {iconChanger(weatherData.weather[0].main)}
               </div>
-              <h1>{weatherData?.main?.temp?.toFixed(0)}</h1>
-              <h2>{weatherData?.weather[0].main}</h2>
             </div>
-            <div className="bottomInfoArea">
-              <div className="humidityLevel">
-                <WiHumidity className="windIcon" />
-                <div className="humidInfo">
-                  <h2>{weatherData?.main?.humidity}%</h2>
-                  <p>Humidity</p>
-                </div>
-              </div>
+            <div className="bottomInfo">
               <div>
-                <BiWind className="windIcon" />
-                <div className="humidInfo">
-                  <h2>{weatherData.wind.speed}km/h</h2>
-                  <p>wind speed</p>
+                <h1 className="degree">
+                  {weatherData?.main?.temp?.toFixed(0)}
+                  <sup>&#176;</sup>
+                </h1>
+                <h2>{weatherData?.weather[0].main}</h2>
+              </div>
+              <div className="bottomInfoArea">
+                <div className="humidityLevel">
+                  <WiHumidity className="humidIcon" />
+                  <div>
+                    <h2 className="humidInfo">
+                      {weatherData?.main?.humidity}%
+                    </h2>
+                    <p className="humidName">Humidity</p>
+                  </div>
+                </div>
+                <div>
+                  <TbWind className="windIcon" />
+                  <div>
+                    <h2 className="humidInfo">{weatherData.wind.speed}km/h</h2>
+                    <p className="humidName">wind speed</p>
+                  </div>
                 </div>
               </div>
             </div>
