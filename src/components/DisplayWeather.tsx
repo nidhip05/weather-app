@@ -97,7 +97,7 @@ const DisplayWeather = () => {
 
       default:
         iconElement = <TiWeatherPartlySunny />;
-        iconColor = "#7B2869";
+        iconColor = "#b169a1";
     }
 
     return (
