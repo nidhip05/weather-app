@@ -69,7 +69,6 @@ const DisplayWeather = () => {
     }
   };
 
-  console.log(weatherData);
 
   const iconChanger = (weather: string) => {
     let iconElement: React.ReactNode;
