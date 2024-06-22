@@ -33,13 +33,13 @@ The Weather App is a responsive web application built using React and TypeScript
    http://localhost:3000 to view the Weather App
 
 # Future Enhancements
- - ## Integration with additional weather APIs for enhanced data accuracy and coverage
- - ## Implementation of user preferences and settings for personalized weather experiences
+ - Integration with additional weather APIs for enhanced data accuracy and coverage
+ - Implementation of user preferences and settings for personalized weather experiences
 
 # Contributing
 Contributions are welcome! Please fork the repository and submit a pull request with your improvements.
 
 # Contact
-For questions or feedback, please contact [Nidhi Patel] at [nidhip5001@gmail.com]
+For questions or feedback, please contact Nidhi Patel at nidhip5001@gmail.com
 
    
