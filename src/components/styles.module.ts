@@ -14,7 +14,7 @@ export const MainWrapper = styled.div`
   background-size: cover;
   .container {
     width: 35rem;
-    background-color: #0a0a0a7d;
+    background-color: #c7c7c77d;
     border-radius: 30px;
     padding: 2rem;
     position: absolute;
@@ -107,7 +107,7 @@ export const MainWrapper = styled.div`
     border-radius: 30px;
     display: grid;
     justify-items: center;
-    background: #999494;
+    background: #e1dbdb;
     margin: 10px;
     grid-gap: 30px;
     box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px inset,

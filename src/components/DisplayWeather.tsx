@@ -32,7 +32,7 @@ interface WeatherDataProps {
 
 const DisplayWeather = () => {
   const apiKey = "0cc86d16bf572f78cdc96c096c7627e5";
-  const apiEndpoint = "http://api.openweathermap.org/data/2.5/";
+  const apiEndpoint = "https://api.openweathermap.org/data/2.5/";
   const [weatherData, setWeatherData] = React.useState<WeatherDataProps | null>(
     null
   );
@@ -97,7 +97,7 @@ const DisplayWeather = () => {
 
       default:
         iconElement = <TiWeatherPartlySunny />;
-        iconColor = "#b169a1";
+        iconColor = "#f3a5e2";
     }
 
     return (
