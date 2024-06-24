@@ -3,7 +3,7 @@
 The Weather App is a responsive web application built using React and TypeScript, providing users with real-time weather information for any city or country worldwide.
 
 
-# 🚀 Key Features: 
+# Key Features
 
 - ## Search Functionality
   Users can search for any city or country to instantly retrieve weather data
@@ -22,7 +22,7 @@ The Weather App is a responsive web application built using React and TypeScript
  - ## API Integration
    Utilizes weather data APIs to fetch and display real-time weather information
  - ## Styling
-   Responsive design principles using SS and styled module.ts files
+   Responsive design principles using CSS and styled module.ts files
 - ## Deployment
    Hosted on vercel for seamless deployment and scalability.
 
@@ -37,6 +37,8 @@ The Weather App is a responsive web application built using React and TypeScript
    npm start
  - ## Open your browser and navigate
    http://localhost:3000 to view the Weather App
+ - ## Live demo
+   Explore the live demo - https://weather-app-nine-alpha-49.vercel.app
 
 
 # Future Enhancements
