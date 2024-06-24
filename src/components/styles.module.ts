@@ -178,6 +178,18 @@ export const MainWrapper = styled.div`
       transform: rotate(360deg);
     }
   }
+  @media (max-width: 375px) {
+    .container {
+      height: calc(100vh - 32px);
+      border-radius: 12px;
+    }
+    .degree {
+      font-size: 32px;
+    }
+    .bottomInfo {
+      border-radius: 12px;
+    }
+  }
   @media only screen and (max-width: 600px) {
     .container {
       padding: 5px;
